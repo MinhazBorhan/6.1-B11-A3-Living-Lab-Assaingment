@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Daisy UI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/78e172d425.js" crossorigin="anonymous"></script>
+  <!-- Tailwind Customize cdn -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'p-color': '#179800',
+            
+          }
+        }
+      }
+    }
+  </script>
+
 </head>
+
 <body>
-    
+  <header>
+    <!-- Navbar Section -->
+    <nav class="w-11/12 mx-auto">
+      <div class="navbar flex justify-between lg:justify-around items-center">
+        <div class="navbar-start">
+          <img class="lg:hidden" src="./assets/logo-footer.png" alt="">
+          <img class="hidden lg:block" src="./assets/logo-header.png" alt="">
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+        </div>
+        <div class="hidden lg:flex lg:justify-center lg:items-center  navbar-end menu menu-horizontal px-1">
+          <ul class="menu menu-horizontal px-1">
+            <li><a><i class="fa-solid fa-magnifying-glass text-xl p-0"></i></a></li>
+            <li><a><i class="fa-solid fa-cart-shopping text-xl p-0"></i></a></li>
+            <li><a class="btn bg-white border border-p-color px-8 font-bold mr-4">Login</a></li>
+            <li><a class="btn bg-p-color border border-p-color px-10 font-bold text-white">Register</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-bottom dropdown-end">
+          <div tabindex="0" role="button" class="lg:hidden m-1">
+            <i class="fa-solid fa-bars md:text-2xl text-p-color"></i>
+          </div>
+          <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+            <li><a><i class="fa-solid fa-magnifying-glass text-xl"></i><input class="outline-none border-none w-full" type="search" name="" id=""></a></li>
+            <li><a><i class="fa-solid fa-cart-shopping text-xl"></i></a></li>
+            <li><a class="btn bg-white border border-p-color mb-2">Login</a></li>
+            <li><a class="btn bg-p-color border border-p-color text-white">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner Section -->
+     <section>
+      <div class="hero mt-20">
+        <div class="hero-content py-0 flex-col">
+          <div class="text-center">
+            <h1 class="text-3xl md:text-5xl font-bold">Freshness <span class="text-p-color">You Can</span> <br>
+              <span class="text-p-color">Count</span> On, Prices You’ll Love!</h1>
+            <p class="md:w-2/3 mx-auto py-6">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+          </div>
+          <img
+            src="./assets/hero-vegetables.png" class="md:w-11/12 lg:w-10/12"/>
+        </div>
+      </div>
+     </section>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
