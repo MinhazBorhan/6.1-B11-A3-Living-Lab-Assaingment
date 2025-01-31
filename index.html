@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet">
   <!-- Tailwind cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Daisy UI cdn -->
@@ -33,10 +39,10 @@
 <body class="box-border">
   <header class="bg-gradient-to-b from-white to-slate-100">
     <!-- Navbar Section -->
-    <nav class="w-11/12 mx-auto">
+    <nav class="box-border w-11/12 mx-auto">
       <div class="navbar flex justify-between lg:justify-around items-center">
         <div class="navbar-start">
-          <img class="lg:hidden" src="./assets/logo-footer.png" alt="">
+          <img class="lg:hidden w-2/5" src="./assets/logo-footer.png" alt="">
           <img class="hidden lg:block" src="./assets/logo-header.png" alt="">
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -47,16 +53,16 @@
           </ul>
         </div>
         <div class="hidden lg:flex lg:justify-center lg:items-center  navbar-end menu menu-horizontal px-1">
-          <ul class="menu menu-horizontal px-1">
-            <li><a><i class="fa-solid fa-magnifying-glass text-xl p-0"></i></a></li>
-            <li><a><i class="fa-solid fa-cart-shopping text-xl p-0"></i></a></li>
-            <li><a class="btn bg-white border border-p-color px-8 font-bold mr-4">Login</a></li>
+          <ul class="menu justify-center items-center menu-horizontal px-1">
+            <a class="p-2"><i class="fa-solid fa-magnifying-glass text-xl p-0"></i></a>
+            <a class="p-2"><i class="fa-solid fa-cart-shopping text-xl p-0"></i></a>
+            <li><a class="btn bg-white border border-p-color px-6 font-bold mr-2">Login</a></li>
             <li><a class="btn bg-p-color border border-p-color px-10 font-bold text-white">Register</a></li>
           </ul>
         </div>
         <div class="dropdown dropdown-bottom dropdown-end">
           <div tabindex="0" role="button" class="lg:hidden m-1">
-            <i class="fa-solid fa-bars md:text-2xl text-p-color"></i>
+            <i class="fa-solid fa-bars md:text-3xl text-p-color"></i>
           </div>
           <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
             <li><a>Product</a></li>
@@ -126,7 +132,7 @@
     </section>
     <!-- Popular Product Section -->
     <section class="bg-s-color py-28">
-      <div  class="w-11/12 mx-auto">
+      <div class="w-11/12 mx-auto">
         <h1 class="text-p-color text-4xl font-semibold text-start mb-10">Popular Products</h1>
         <div class="flex flex-col lg:flex-row gap-4">
           <div class="lg:w-1/2 card card-compact space-y-24 bg-gradient-to-b from-lime-400 to-lime-200">
@@ -244,50 +250,42 @@
           </div>
         </div>
       </div>
-
-      <!-- </section>
+    </section>
+    <!-- Arrival & Offers Section -->
     <section>
-      <div class="card just items-center p-2 flex-row bg-base-100 w-96 shadow-xl">
-        <figure class="pl-4">
-          <img
-            src="./assets/image 43.png"
-            alt=""
-            class="rounded-xl bg-s-color p-2" />
-        </figure>
-        <div class="card-body p-4 gap-0">
-          <p class="font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.5</p>
-          <h2 class="card-title font-bold">Onion 1 KG</h2>
-          <p class="font-semibold">$39.99</p>
+      <div class="w-11/12 mx-auto">
+        <h1 class="text-p-color text-4xl font-semibold text-start mb-10">Popular Products</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-4">
+          <div class=" lg:col-span-3 card card-side bg-[#115414] justify-between items-center py-4">
+            <div class="card-body pl-2 md:pl-10 lg:pl-4 w-1/2 gap-5">
+              <img src="./assets/dawat-logo.png" alt="" class="w-2/4 lg:w-3/4" />
+              <div class="card-actions">
+                <button class="btn bg-[#63B76D] border-none text-xl px-2 md:px-10 text-white">Cook Exotic
+                  Dishes</button>
+              </div>
+              <p class="text-white text-sm md:text-4xl lg:text-2xl">UP to <span class="font-bold">20% OFF</span></p>
+            </div>
+            <figure class="w-1/2">
+              <img src="./assets/dawat-mock-up.png" alt="" />
+            </figure>
+          </div>
+          <div class="card lg:col-span-2 card-side bg-[#102861] justify-between items-center py-2 lg:gap-2">
+            <div class="card-body pl-2 md:pl-10 lg:pl-2 flex-none w-1/2 gap-3">
+              <img src="./assets/india-gate-logo.png" alt="" class="w-2/6 lg:w-2/4" />
+              <div class="card-actions">
+                <button class="btn bg-[#2A4D97] border-none text-xl px-2 md:px-10 lg:px-5 text-white">World’s No.1
+                  Rice</button>
+              </div>
+              <p class="text-white text-sm md:text-4xl lg:text-2xl">UP to <span class="font-bold">40% OFF</span></p>
+            </div>
+            <figure class="p-8 md:p-0 md:mr-20 lg:mr-0 lg:p-2 md:w-1/4 lg:w-1/2">
+              <img src="./assets/india-gate-mock-up.png" alt="" />
+            </figure>
+          </div>
         </div>
       </div>
-      <div class="card p-2 flex-row bg-base-100 w-96 shadow-xl">
-        <figure class="pl-4">
-          <img
-            src="./assets/image 41.png"
-            alt=""
-            class="rounded-xl bg-s-color p-2" />
-        </figure>
-        <div class="card-body p-4 gap-0">
-          <p class="font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.5</p>
-          <h2 class="card-title font-bold">Tomato 500 g </h2>
-          <p class="font-semibold">$39.99</p>
-        </div>
       </div>
-      <div class="card p-2 flex-row bg-base-100 w-96 shadow-xl">
-        <figure class="pl-4">
-          <img
-            src="./assets/image 44.png"
-            alt=""
-            class="rounded-xl bg-s-color p-2" />
-        </figure>
-        <div class="card-body p-4 gap-0">
-          <p class="font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.5</p>
-          <h2 class="card-title font-bold">Potato 1KG</h2>
-          <p class="font-semibold">$39.99</p>
-        </div>
-      </div>
-    </section> -->
-
+    </section>
   </main>
   <footer>
 
